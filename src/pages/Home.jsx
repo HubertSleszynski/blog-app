@@ -28,15 +28,14 @@ const Home = ({ isAuth }) => {
               <div className="title">
                 <h1>{post.title}</h1>
               </div>
-              <div className="deletePost">
-                {isAuth && post.author.id === auth.currentUser.uid && (
-                  <FaTrashAlt
-                    onClick={() => {
-                      deletePost(post.id);
-                    }}
-                  />
-                )}
-              </div>
+              {isAuth && post.author.id === auth.currentUser.uid && (
+                <FaTrashAlt
+                  className="deletePostBtn"
+                  onClick={() => {
+                    deletePost(post.id);
+                  }}
+                />
+              )}
             </div>
             <div className="postTextContainer">{post.postText}</div>
             <h3>@{post.author.name}</h3>

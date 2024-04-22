@@ -113,46 +113,35 @@ a {
 
 .homePage {
   width: 100%;
-  min-height: calc(100vh - 80px);
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 1rem;
 }
 
 .homePage .post {
-  width: 600px;
+  width: 85%;
+  max-width: 50rem;
   height: auto;
   max-height: 600px;
   background-color: rgb(250, 250, 250);
+  color: black;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin: 20px;
-  padding: 20px;
+  margin-bottom: 1rem;
+  padding: 1.2rem;
   border-radius: 15px;
 }
 
 .post .postHeader {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
-.postHeader .title {
-  flex: 50%;
-}
-.postHeader .deletePost {
-  flex: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.deletePost button {
-  border: none;
-
-  background: none;
-  font-size: 30px;
+.deletePostBtn {
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -160,7 +149,5 @@ a {
   word-wrap: break-word;
   height: auto;
   max-height: 400px;
-  width: 100%;
-  overflow: hidden;
   overflow-y: auto;
 }
