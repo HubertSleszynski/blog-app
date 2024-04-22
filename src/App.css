@@ -39,9 +39,11 @@ a {
 
 .createPostPage {
   width: 100%;
-  display: grid;
-  place-items: center;
-  margin-top: 3rem;
+  height: 89vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cpContainer {
