@@ -4,6 +4,12 @@ import "../App.css";
 import { signInWithPopup, signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { auth, provider } from "../firebase-config";
+import {
+  IoHomeOutline,
+  IoDuplicateOutline,
+  IoLogOutOutline,
+} from "react-icons/io5";
+import { CiLogin, CiLogout } from "react-icons/ci";
 
 const Navbar = ({ isAuth, setIsAuth }) => {
   let navigate = useNavigate();
@@ -12,6 +18,7 @@ const Navbar = ({ isAuth, setIsAuth }) => {
     signOut(auth).then(() => {
       localStorage.clear();
       setIsAuth(false);
+      navigate("/");
     });
   };
 
@@ -24,16 +31,24 @@ const Navbar = ({ isAuth, setIsAuth }) => {
 
   return (
     <nav className="navbar">
-      <Link to="/">Home</Link>
+      <Link to="/">
+        <IoHomeOutline className="navbarIcons" />
+        <p className="navbarLabels">Home</p>
+      </Link>
       {!isAuth ? (
         <Link to="/" onClick={signInWithGoogle}>
-          Login
+          <CiLogin className="navbarIcons" />
+          <p className="navbarLabels">Log In</p>
         </Link>
       ) : (
         <>
-          <Link to="/createpost">Create Post</Link>
+          <Link to="/createpost">
+            <IoDuplicateOutline className="navbarIcons" />
+            <p className="navbarLabels">Create Post</p>
+          </Link>
           <Link to="/" onClick={signUserOut}>
-            Log Out
+            <CiLogout className="navbarIcons" />
+            <p className="navbarLabels">Log Out</p>
           </Link>
         </>
       )}

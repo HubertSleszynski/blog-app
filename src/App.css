@@ -13,17 +13,28 @@ body {
   width: 100%;
   height: 10vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #3c3744;
   box-shadow: 1px 4px 4px #565161;
 }
 
 a {
-  color: #3c3744;
   text-decoration: none;
-  margin: 10px;
-  font-size: 1.5rem;
+  color: #3c3744;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbarLabels {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.navbarIcons {
+  font-size: 2.25rem;
 }
 
 .createPostPage {
@@ -142,6 +153,18 @@ a {
 
 .deletePostBtn {
   font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.createPostBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.createPostIcon {
+  font-size: 2.5rem;
+  color: #3c3744;
   cursor: pointer;
 }
 

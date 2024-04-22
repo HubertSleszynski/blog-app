@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { addDoc, collection } from "firebase/firestore";
 import { db, auth } from "../firebase-config";
 import { useNavigate } from "react-router-dom";
+import { IoIosAdd } from "react-icons/io";
 
 const CreatePost = ({ isAuth }) => {
   const [title, setTitle] = useState("");
@@ -57,7 +58,9 @@ const CreatePost = ({ isAuth }) => {
             }}
           ></textarea>
         </div>
-        <button onClick={createPost}>Submit Post</button>
+        <button className="createPostBtn">
+          <IoIosAdd className="createPostIcon" onClick={createPost} />
+        </button>
       </div>
     </div>
   );

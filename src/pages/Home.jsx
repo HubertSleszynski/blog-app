@@ -21,9 +21,9 @@ const Home = ({ isAuth }) => {
   };
   return (
     <div className="homePage">
-      {postLists.map(post => {
+      {postLists.map((post, index) => {
         return (
-          <div className="post">
+          <div className="post" key={index}>
             <div className="postHeader">
               <div className="title">
                 <h1>{post.title}</h1>
