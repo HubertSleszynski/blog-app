@@ -28,61 +28,61 @@ a {
 
 .createPostPage {
   width: 100%;
-  height: calc(100vh - 80px);
   display: grid;
   place-items: center;
+  margin-top: 3rem;
 }
 
 .cpContainer {
-  width: 500px;
+  width: 85%;
+  max-width: 550px;
   height: auto;
-  padding: 20px;
-  background-color: black;
-  border-radius: 12px;
+  padding: 1rem;
+  background-color: rgb(126, 148, 125);
+  border-radius: 10px;
   color: white;
   display: flex;
   flex-direction: column;
 }
 
-.cpContainer h1 {
+.cpContainer .cpHeader {
   text-align: center;
 }
 
-.cpContainer label {
-  font-size: 25px;
+.cpContainer .inputLabel {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
 }
+
 .cpContainer .inputGp {
-  margin-top: 30px;
+  margin-top: 1.75rem;
   display: flex;
   flex-direction: column;
 }
 
 .inputGp input,
 .inputGp textarea {
-  font-size: 18px;
+  font-size: 1.2rem;
   border: none;
   border-radius: 2px;
+  outline-color: #bad9b5;
   padding: 5px;
 }
 
 .inputGp input {
-  height: 40px;
+  height: 2.5rem;
 }
 .inputGp textarea {
-  height: 150px;
+  height: 10rem;
 }
 
 .cpContainer button {
-  margin-top: 20px;
-  height: 40px;
+  margin-top: 1rem;
+  height: 2.5rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 18px;
-}
-input,
-textarea {
-  margin-top: 5px;
+  font-size: 1.2rem;
 }
 
 .loginPageContainer {

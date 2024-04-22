@@ -28,9 +28,11 @@ const CreatePost = ({ isAuth }) => {
   return (
     <div className="createPostPage">
       <div className="cpContainer">
-        <h1>Create A Post</h1>
+        <h1 className="cpHeader">Create A Post</h1>
         <div className="inputGp">
-          <label htmlFor="title">Title</label>
+          <label className="inputLabel" htmlFor="title">
+            Title
+          </label>
           <input
             type="text"
             placeholder="Your title"
@@ -41,7 +43,9 @@ const CreatePost = ({ isAuth }) => {
           />
         </div>
         <div className="inputGp">
-          <label htmlFor="text">Post</label>
+          <label className="inputLabel" htmlFor="text">
+            Post
+          </label>
           <textarea
             name=""
             id="text"
