@@ -1,8 +1,25 @@
-# React + Vite
+# InspiraNota
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This blog/to-do-list application is a tool designed for efficient task management. With its dynamic user interface, you can easily add and remove your posts. By using Firebase database your posts are stored in the cloud which makes it more secuire. Is it possible to complete a portfolio without this?
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+LIVE: [InspiraNota](https://blog-website-69054.web.app/)
+
+## Screenshot
+
+<img src="src/assets/blog-website-69054.web.app_(2).png" width="600">
+
+## Tech Stack
+
+Yarn Vite React CSS Firebase
+
+## Author
+
+### Hubert Śleszyński
+
+Portfolio: https://hrs-dev.netlify.app/
+
+Linkedin: https://www.linkedin.com/in/hubertsleszynski/
+
+Github: https://github.com/HubertSleszynski
